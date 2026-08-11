@@ -30,12 +30,12 @@ jobs:
 
       - name: 复制文件index.html到docs目录
         run: |
-          cp index.html docs/index.html
+          cp index.html docs_en/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./docs_en
           # 如果你想用自定义域名，取消下一行注释
           # cname: docs.xpulabs.com
