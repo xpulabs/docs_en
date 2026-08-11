@@ -6,7 +6,7 @@ src = "src"
 title = "CH32H417系列开发板使用手册"
 
 [build]
-build-dir = "../docs/ch32h417/"
+build-dir = "../docs_en/ch32h417/"
 
 
 [output.html]
