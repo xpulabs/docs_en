@@ -1,1 +1,3 @@
-ch32h417/book/
+.gitignore
+ch32h417/book/*
+.marscode/*
