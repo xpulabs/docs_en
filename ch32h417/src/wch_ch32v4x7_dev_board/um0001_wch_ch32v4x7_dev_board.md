@@ -55,8 +55,8 @@ Download MounRiver_Studio, double click to install it, and you can use it after 
 
 **Open Project**
 
-1）Double-click project file directly with the suffix name .wvproj under the corresponding project path.
-2）Click File in MounRiver IDE2, click Load Project, select the .project file under the corresponding path, and click Confirm to apply it.
+- 1. Double-click project file directly with the suffix name .wvproj under the corresponding project path.
+- 2. Click File in MounRiver IDE2, click Load Project, select the .project file under the corresponding path, and click Confirm to apply it.
 
 **Compilation**
 
@@ -124,11 +124,13 @@ Double-click on the left side of the code to set a breakpoint, double click agai
 **3）Interface display**
 
 1. Instruction set interface
+
 Click on the instruction set single-step debugging can enter the instruction debugging, to single-step jump in for example, click once to run once, the running cursor will move to view the program running, the instruction set interface is shown as follows.
 
 ![](static/images/2026-08-10-17-38-02-image.png)
 
 2. Program running interface
+
 It can be used with instruction set single-step debugging, still take single-step jumping in as an example, click once to run once, the running cursor will move to view the program running, the program running interface is shown as follows.
 
 ![](static/images/2026-08-10-17-38-28-image.png)
