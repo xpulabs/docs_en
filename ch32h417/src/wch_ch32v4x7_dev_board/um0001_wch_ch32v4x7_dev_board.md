@@ -46,8 +46,9 @@ The above CH32V407VET6 evaluation board comes with the following resources. Moth
 
 ![](static/images/2026-08-10-17-34-37-image.png)
 
-PUB folder: provides evaluation board manuals, evaluation board schematics.
-EXAM folder: Provides software development drivers and corresponding examples for the CH32V4x7 controller, grouped by peripheral. Each type of peripheral folder contains one or more functional application routines folders.
+- PUB folder: provides evaluation board manuals, evaluation board schematics.
+
+- EXAM folder: Provides software development drivers and corresponding examples for the CH32V4x7 controller, grouped by peripheral. Each type of peripheral folder contains one or more functional application routines folders.
 
 ### 3.2 IDE Use-MounRiver
 
@@ -55,8 +56,8 @@ Download MounRiver_Studio, double click to install it, and you can use it after 
 
 **Open Project**
 
-- 1. Double-click project file directly with the suffix name .wvproj under the corresponding project path.
-- 2. Click File in MounRiver IDE2, click Load Project, select the .project file under the corresponding path, and click Confirm to apply it.
+- 1.Double-click project file directly with the suffix name .wvproj under the corresponding project path.
+- 2.Click File in MounRiver IDE2, click Load Project, select the .project file under the corresponding path, and click Confirm to apply it.
 
 **Compilation**
 
