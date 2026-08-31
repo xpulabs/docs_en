@@ -3,12 +3,11 @@ authors = ["peter"]
 language = "en"
 multilingual = false
 src = "src"
-title = "CH32H417&CH32V4x7 Series Development Board User Manual"
+title = "Maple ESP32 Series Development Board User Manual"
 
 [build]
-build-dir = "../docs_en/ch32h417/"
+build-dir = "../docs_en/maple_esp32/"
 
 
 [output.html]
 sidebar = true  # 关键配置：强制显示侧边栏（禁用自动隐藏）
-
