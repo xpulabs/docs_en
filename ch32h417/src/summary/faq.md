@@ -50,8 +50,8 @@ Accordingly, the SWD interface gets disabled by the following code during the in
     GPIO_PinRemapConfig(GPIO_Remap_SWJ_Disable, ENABLE);
 ```
 
-解决办法：使用WCH LINK-E调试器将Code Flash擦除。
-具体步骤如下：
+Solution: Erase the Code Flash using the WCH‑LINK‑E debugger.
+The detailed steps are as follows:
 
 1. Connect the WCH‑LINK‑E debugger to the SWD interface of the development board, and power the board via the debugger.
 2. Launch MounRiver Studio II IDE, go to **Download** → **Download Configuration**.
@@ -67,7 +67,9 @@ Accordingly, the SWD interface gets disabled by the following code during the in
 The CH32H417 integrates an internally‑regulated LDO with adjustable output voltage to supply power to the VIO_18 net. A 100 K pull‑down resistor on the XO pin yields a 1.2 V output; a floating XO pin yields a 1.8 V output; and a 330 K pull‑down resistor yields a 2.5 V output.
 
 
-![](static/images/2026-02-04-19-33-43-image.png)可以通过软件来配置LDO的输出电压，具体方法如下：
+![](static/images/2026-02-04-19-33-43-image.png)
+
+The output voltage of the LDO can be configured via software. The specific procedure is as follows:
 
 ```C
     RCC_HB1PeriphClockCmd(RCC_HB1Periph_PWR, ENABLE);
