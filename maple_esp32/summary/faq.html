@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Petros CH32H417M Alef Board User Manual - CH32H417&amp;CH32V4x7 Series Development Board User Manual</title>
+        <title>FAQ - Maple ESP32 Series Development Board User Manual</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../summary/faq.html">FAQ</a></li><li class="chapter-item expanded affix "><li class="part-title">Petros CH32H417 Series</li><li class="chapter-item expanded "><a href="../petros_ch32h417_alef/um0003_petros_ch32h417q_alef.html"><strong aria-hidden="true">1.</strong> Petros CH32H417Q Alef Board User Manual</a></li><li class="chapter-item expanded "><a href="../petros_ch32h417_alef/um0001_petros_ch32h417m_alef.html" class="active"><strong aria-hidden="true">2.</strong> Petros CH32H417M Alef Board User Manual</a></li><li class="chapter-item expanded "><a href="../petros_ch32h417_alef/um0002_petros_ch32h417w_alef.html"><strong aria-hidden="true">3.</strong> Petros CH32H417W Alef Board User Manual</a></li><li class="chapter-item expanded affix "><li class="part-title">WCH CH32H417&CH32V407 EVB</li><li class="chapter-item expanded "><a href="../wch_ch32h417_dev_board/usage_manual.html"><strong aria-hidden="true">4.</strong> WCH CH32H417 EVB User Manual</a></li><li class="chapter-item expanded "><a href="../wch_ch32v4x7_dev_board/um0001_wch_ch32v4x7_dev_board.html"><strong aria-hidden="true">5.</strong> WCH CH32V4x7 EVB User Manual</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../summary/faq.html" class="active"><strong aria-hidden="true">1.</strong> FAQ</a></li><li class="chapter-item expanded affix "><li class="part-title">Maple ESP32S31 Series Development Boards</li><li class="chapter-item expanded "><a href="../maple_esp32s31/ug0001_maple_esp32s31_alef_user_guide.html"><strong aria-hidden="true">2.</strong> Maple ESP32S31 Alef</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -141,7 +141,7 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">CH32H417&amp;CH32V4x7 Series Development Board User Manual</h1>
+                    <h1 class="menu-title">Maple ESP32 Series Development Board User Manual</h1>
 
                     <div class="right-buttons">
                         <a href="../print.html" title="Print this book" aria-label="Print this book">
@@ -173,96 +173,18 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="petros-ch32h417m-alef-breakout---dual-risc-v-core--usb30-mcu-board"><a class="header" href="#petros-ch32h417m-alef-breakout---dual-risc-v-core--usb30-mcu-board">Petros CH32H417M Alef Breakout - Dual RISC-V Core &amp; USB3.0 MCU Board</a></h1>
-<h2 id="1-overview"><a class="header" href="#1-overview">1. Overview</a></h2>
-<p>CH32H417 is a 32-bit microcontroller developed by Nanjing Qinheng Microelectronics, designed for embedded product development. It features USB3.0 high-speed interface and dual-core RISC-V architecture. Leveraging these advantages, XPU Labs has launched the Petros CH32H417M Alef development board.</p>
-<p>This board adopts the CH32H417MEU6 microcontroller packaged in QFN88 form factor. Measuring 52mm × 21mm, it boasts a compact size and pin-compatible layout with Raspberry Pi RP2040 Pico. Equipped with a USB3.0 Type-A female port, it supports the development of high-speed USB3.0 devices. Actual tests show its downstream transmission speed reaches 430MB/s, making it ideal for high-speed data acquisition. On-board board-to-board connectors bring out DVP, I2C, SPI and ADC interfaces for convenient connection with various sensor modules.</p>
-<p><img src="static/images/2026-05-21-14-03-46-image.png" alt="" /></p>
-<h2 id="2-chip-features"><a class="header" href="#2-chip-features">2. Chip Features</a></h2>
-<ul>
-<li>Dual-core architecture: Qingke RISC-V5F and RISC-V3F</li>
-<li>V5F maximum frequency: 400MHz, V3F maximum frequency: 144MHz</li>
-<li>896KB SRAM, 960KB Flash</li>
-<li>System supply voltage: rated 3.3V</li>
-<li>Conventional GPIO supply voltage: rated 3.3V, supports 1.8V</li>
-<li>High-speed GPIO supply voltage: selectable 1.2/1.8/2.5/3.3V</li>
-<li>2 groups of 16-channel universal DMA controllers</li>
-<li>2 groups of 12-bit analog-to-digital converters (ADC), sampling rate up to 5Msps, supporting dual ADC conversion mode</li>
-<li>1 group of 10-bit high-speed analog-to-digital converter (HSADC), sampling rate up to 20Msps</li>
-<li>16-channel TouchKey detection</li>
-<li>2 groups of 12-bit digital-to-analog converters (DAC)</li>
-<li>32-bit wide 125MHz universal high-speed interface (UHSIF)</li>
-<li>144MHz digital image interface (DVP)</li>
-<li>200MHz dual-edge SD/EMMC controller (SDMMC)</li>
-<li>SDIO host/slave interface: supports SD/SDIO/MMC</li>
-<li>Single-wire protocol master interface (SWPMI)</li>
-<li>Programmable protocol I/O controller (PIOC)</li>
-<li>Ethernet controller MAC and 10M/100M PHY</li>
-<li>5Gbps ultra-high-speed USB 3.0 controller and PHY</li>
-<li>480Mbps high-speed USB 2.0 controller and PHY</li>
-<li>Full-speed USB 2.0 controller and PHY</li>
-<li>Long-distance SerDes controller and PHY, supporting kilovolt-level high-voltage signal isolation transmission</li>
-<li>USB PD and Type-C controller and PHY</li>
-</ul>
-<h2 id="3-board-specifications"><a class="header" href="#3-board-specifications">3. Board Specifications</a></h2>
-<ul>
-<li>Main Chip: CH32H417MEU6, QFN88 package, dual-core RISC-V with USB3.0</li>
-<li>100% form-factor compatible with Raspberry Pi Pico</li>
-<li>Board-to-board connector supports expansion of camera modules such as OV2640</li>
-<li>All GPIO pins are accessible for convenient development</li>
-<li>DVP, SPI, I2C and ADC interfaces led out via board-to-board connector</li>
-<li>On-board reset button</li>
-<li>Firmware downloadable via USB3.0 Type-A port</li>
-<li>Built-in SWD and UART6 debugging interfaces</li>
-<li>Comes with multi-interface Link-E debugger, plug-and-play</li>
-<li>Dimensions: 52mm × 21mm</li>
-</ul>
-<h2 id="4-hardware"><a class="header" href="#4-hardware">4. Hardware</a></h2>
-<p><strong>Interfaces</strong></p>
-<p><img src="static/images/2026-05-21-18-53-03-image.png" alt="" /></p>
-<p><strong>Pins</strong></p>
-<p><img src="static/images/2026-05-21-18-51-54-image.png" alt="" /></p>
-<p>The pin definition of the 40-pin board-to-board connector is as follows. The adopted connector model is HRS <strong>DF12NB(3.0)-40DP-0.5V(51)</strong>.</p>
-<p><img src="static/images/2026-05-21-18-55-27-image.png" alt="" /></p>
-<p><img src="static/images/2026-05-21-14-33-34-image.png" alt="" /></p>
-<p>This interface currently supports connection with the Phos Ayin OV2640 module.</p>
-<ul>
-<li>
-<p>Phos Ayin OV2640 Module</p>
-<p><img src="static/images/2026-05-21-18-59-19-image.png" alt="" /></p>
-</li>
-</ul>
-<h2 id="5-software"><a class="header" href="#5-software">5. Software</a></h2>
-<p>CH32H417M uses MounRiver II IDE for development development. It supports Windows &amp; Linux. </p>
-<p>The debugger is WCH Link-E 1V3, XPU Labs also developed a debugger for this board. It uses the 1.27mm spacing of the CH32H417M board-to-board headers</p>
-<p><img src="static/images/2026-05-29-19-18-55-img_v3_02123_07370436-bea0-436b-985f-68108a4894bg.jpg" alt="" /></p>
-<p>Another approach is to use a standard USB2.0 Type‑A port with externally connected pin headers to interface with Link‑E. Simply plug the USB2.0 Type‑A connector into the board’s USB3.0 Type‑A port.</p>
-<p><img src="static/images/2026-05-29-19-15-20-image.png" alt="" /></p>
-<h2 id="6-tutorials"><a class="header" href="#6-tutorials">6. Tutorials</a></h2>
-<p>TBD</p>
-<h2 id="7-resources"><a class="header" href="#7-resources">7. Resources</a></h2>
-<ul>
-<li>
-<p><strong>原理图</strong></p>
-</li>
-<li>
-<p><strong>例程</strong></p>
-</li>
-</ul>
-<h2 id="8-exapmles"><a class="header" href="#8-exapmles">8. Exapmles</a></h2>
-<p>TBD</p>
-<h2 id="9-faq"><a class="header" href="#9-faq">9. FAQ</a></h2>
+                        <h1 id="faq"><a class="header" href="#faq">FAQ</a></h1>
+<h2 id="q0001---how-to-buy-xpu-labs-boards"><a class="header" href="#q0001---how-to-buy-xpu-labs-boards">Q0001 - How to buy XPU Labs Boards?</a></h2>
+<p>Please visit <a href="https://www.analoglamb.com">AnalogLamb</a> to buy XPU Labs boards.</p>
+<h2 id="q0002---tbd"><a class="header" href="#q0002---tbd">Q0002 - TBD</a></h2>
 <p>TBD</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../petros_ch32h417_alef/um0003_petros_ch32h417q_alef.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
 
-                            <a rel="next prefetch" href="../petros_ch32h417_alef/um0002_petros_ch32h417w_alef.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../maple_esp32s31/ug0001_maple_esp32s31_alef_user_guide.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -272,11 +194,8 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../petros_ch32h417_alef/um0003_petros_ch32h417q_alef.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
 
-                    <a rel="next prefetch" href="../petros_ch32h417_alef/um0002_petros_ch32h417w_alef.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../maple_esp32s31/ug0001_maple_esp32s31_alef_user_guide.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
