@@ -1,5 +1,7 @@
 # Summary
 
+- [FAQ](./summary/faq.md)
+
 
 # Maple ESP32S31 Series Development Boards
 

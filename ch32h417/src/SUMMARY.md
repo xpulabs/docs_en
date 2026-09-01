@@ -1,6 +1,6 @@
 # Summary
 
-[FAQ](./faq.md)
+[FAQ](./summary/faq.md)
 
 # Petros CH32H417 Series
 
