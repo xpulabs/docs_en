@@ -211,8 +211,8 @@
     RCC_HB2PeriphClockCmd(RCC_HB2Periph_AFIO | RCC_HB2Periph_GPIOB, ENABLE);
     GPIO_PinRemapConfig(GPIO_Remap_SWJ_Disable, ENABLE);
 </code></pre>
-<p>解决办法：使用WCH LINK-E调试器将Code Flash擦除。
-具体步骤如下：</p>
+<p>Solution: Erase the Code Flash using the WCH‑LINK‑E debugger.
+The detailed steps are as follows:</p>
 <ol>
 <li>
 <p>Connect the WCH‑LINK‑E debugger to the SWD interface of the development board, and power the board via the debugger.</p>
@@ -233,7 +233,8 @@
 </ol>
 <h2 id="q0004---why-is-the-gpio-level-incorrect"><a class="header" href="#q0004---why-is-the-gpio-level-incorrect">Q0004 - Why is the GPIO level incorrect?</a></h2>
 <p>The CH32H417 integrates an internally‑regulated LDO with adjustable output voltage to supply power to the VIO_18 net. A 100 K pull‑down resistor on the XO pin yields a 1.2 V output; a floating XO pin yields a 1.8 V output; and a 330 K pull‑down resistor yields a 2.5 V output.</p>
-<p><img src="static/images/2026-02-04-19-33-43-image.png" alt="" />可以通过软件来配置LDO的输出电压，具体方法如下：</p>
+<p><img src="static/images/2026-02-04-19-33-43-image.png" alt="" /></p>
+<p>The output voltage of the LDO can be configured via software. The specific procedure is as follows:</p>
 <pre><code class="language-C">    RCC_HB1PeriphClockCmd(RCC_HB1Periph_PWR, ENABLE);
     PWR_VIO18ModeCfg(PWR_VIO18CFGMODE_SW);
     PWR_VIO18LevelCfg(PWR_VIO18Level_MODE3); // output 3.3V
